@@ -1,3 +1,7 @@
+# ICS4U-2021-Final-Project-Roman
+
+[![GitHub's Super Linter](https://github.com/Mr-Coxall/ICS4U-2021-Final-Project-Roman/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/ICS4U-2021-Final-Project-Roman/actions)
+
 ## Running React on Repl.it
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.

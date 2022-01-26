@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Tabletop from 'tabletop';
 
 class App extends Component {
   constructor() {
@@ -8,16 +7,6 @@ class App extends Component {
     this.state = {
       data: []
     }
-  }
-
-  componentDidMount() {
-    Tabletop.init( {
-      key: '1Zg4sEelM0aVL_RUesEXq-VhroA27uKngh1BJEBVH460',
-      callback: googleData => {
-        console.log('google sheet data --->', googleData)
-      },
-      simpleSheet: true
-    })
   }
 
   render() {

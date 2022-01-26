@@ -1,0 +1,22 @@
+{
+    "inventory": [
+      {
+        "object": "Chair",
+        "quantity": 15,
+        "description": "4 legs with arm rests and green backrest",
+        "date of entry": "Jan 2nd, 2022"
+      },
+      {
+        "object": "Table",
+        "quantity": 3,
+        "description": "Foldable grey table",
+        "date of entry": "Jan 13th, 2022"
+      },
+      {
+        "object": "Phone",
+        "quantity": 4,
+        "description": "IPhone X",
+        "date of entry": "Jan 23rd, 2022"
+      }
+    ]
+}

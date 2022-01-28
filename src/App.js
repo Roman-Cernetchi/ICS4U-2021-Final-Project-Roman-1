@@ -16,7 +16,7 @@ const getLocalStorage = () => {
 export default function App() {
   const [showAddObject, setShowAddObject] = useState(false);
   const [objects, setObjects] = useState(getLocalStorage());
-  // "inventory": [
+  // const [objects, setObjects] = useState([
   //  {
   //    "object": "Chair",
   //    "quantity": 15,
@@ -36,8 +36,9 @@ export default function App() {
   //   "date of entry": "Jan 23rd, 2022"
   //  }
   // ]
+  //
 
-  // Add Task
+  // Add Object
   const addObject = (object) => {
     const id = Math.floor(Math.random() * 10000 + 1);
     const newObject = {
@@ -63,7 +64,7 @@ export default function App() {
   }, [objects]);
 
   return (
-    <div className="container">
+    <div className="Container">
       <Header onAdd={showObjectForm} title="Inventory Tracker" showAdd={showAddObject} />
       {showAddObject && <AddObject addObject={addObject} />}
       {objects.length > 0 ? (
@@ -72,7 +73,7 @@ export default function App() {
           onDelete={deleteObject}
         />
       ) : (
-        "No more objects"
+        "Welcome to the Inventory tracking website, to start press Add Object."
       )}
     </div>
   );

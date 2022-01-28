@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const AddObject = ({ addObject }) => {
     const [object, setObject] = useState({
-        text: String,
-        quantity: Number,
-        description: String,
-        date: String
+        text: "",
+        quantity: "",
+        description: "",
+        date: ""
     });
 
     const handleChange = (e) => {
@@ -32,10 +32,10 @@ const AddObject = ({ addObject }) => {
           });
       
         setObject({
-            text: String,
-            quantity: Number,
-            description: String,
-            date: String
+            text: "",
+            quantity: "",
+            description: "",
+            date: ""
         });
       
     };

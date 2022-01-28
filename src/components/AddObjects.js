@@ -55,7 +55,7 @@ const AddObject = ({ addObject }) => {
             <div className="form-control">
                 <label>Quantity</label>
                 <input
-                    type={Number}
+                    type="text"
                     placeholder="Add a Quantity"
                     name="quantity"
                     value={object.quantity}

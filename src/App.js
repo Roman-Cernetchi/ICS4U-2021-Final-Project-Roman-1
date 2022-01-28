@@ -16,27 +16,6 @@ const getLocalStorage = () => {
 export default function App() {
   const [showAddObject, setShowAddObject] = useState(false);
   const [objects, setObjects] = useState(getLocalStorage());
-  // const [objects, setObjects] = useState([
-  //  {
-  //    "object": "Chair",
-  //    "quantity": 15,
-  //    "description": "4 legs with arm rests and green backrest",
-  //    "date of entry": "Jan 2nd, 2022"
-  // },
-  //  {
-  //    "object": "Table",
-  //    "quantity": 3,
-  //    "description": "Foldable grey table",
-  //    "date of entry": "Jan 13th, 2022"
-  //  },
-  //  {
-  //    "object": "Phone",
-  //    "quantity": 4,
-  //    "description": "IPhone X",
-  //   "date of entry": "Jan 23rd, 2022"
-  //  }
-  // ]
-  //
 
   // Add Object
   const addObject = (object) => {
@@ -69,7 +48,7 @@ export default function App() {
       {showAddObject && <AddObject addObject={addObject} />}
       {objects.length > 0 ? (
         <Objects
-        objects={objects}
+          objects={objects}
           onDelete={deleteObject}
         />
       ) : (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import AddObject from "./components/AddObject";
+import AddObject from "./components/AddObjects";
 import Header from "./components/Header";
 import Objects from "./components/Objects";
-import "./styles.css";
+import "./App.css";
 
 const getLocalStorage = () => {
   let objects = localStorage.getItem("myObjects");
@@ -70,7 +70,6 @@ export default function App() {
         <Objects
         objects={objects}
           onDelete={deleteObject}
-          toggleReminder={toggleReminder}
         />
       ) : (
         "No more objects"

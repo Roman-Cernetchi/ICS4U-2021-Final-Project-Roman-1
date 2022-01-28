@@ -82,7 +82,7 @@ const AddObject = ({ addObject }) => {
                     onChange={handleChange}
                 />
             </div>
-            <input type="submit" value="Save Task" className="btn btn-block" />
+            <input type="submit" value="Save Object" className="btn btn-block" />
         </form>
     );
 };

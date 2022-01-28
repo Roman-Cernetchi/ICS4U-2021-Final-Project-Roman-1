@@ -7,7 +7,7 @@ const Object = ({ object, handleDelete, toggleReminder }) => {
         {object.text}{" "}
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
-          onClick={() => handleDelete(task.id)}
+          onClick={() => handleDelete(object.id)}
         />
     </h3>
   );

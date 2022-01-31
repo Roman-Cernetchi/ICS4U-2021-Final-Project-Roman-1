@@ -8,8 +8,8 @@ const AddObject = ({ addObject }) => {
         date: ""
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
+    const handleChange = (event) => {
+        const { name, value } = event.target;
         setObject((prevObject) => {
             return {
             ...prevObject,
@@ -18,26 +18,25 @@ const AddObject = ({ addObject }) => {
       });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
         if (!object.text) {
           alert("Please add an object");
+        } else {
+            addObject({
+                text: object.text,
+                quantity: object.quantity,
+                description: object.description,
+                date: object.date,
+              });
+          
+            setObject({
+                text: "",
+                quantity: "",
+                description: "",
+                date: ""
+            });
         }
-
-        addObject({
-            text: object.text,
-            quantity: object.quantity,
-            description: object.description,
-            date: object.date
-          });
-      
-        setObject({
-            text: "",
-            quantity: "",
-            description: "",
-            date: ""
-        });
-      
     };
 
     return (

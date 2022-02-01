@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
-const Object = ({ object, handleDelete, toggleReminder }) => {
+const Object = ({ object, handleDelete, }) => {
   return (
     <div class="Container2"
       >
@@ -12,7 +12,18 @@ const Object = ({ object, handleDelete, toggleReminder }) => {
           onClick={() => handleDelete(object.id)}
         />
       </h3>
-      <p>{object.date}</p>
+      <table>
+        <thead>
+          <th>Quantity</th>
+          <th>Description</th>
+          <th>DOE</th>
+        </thead>
+        <tbody>
+          <td>{object.quantity}</td>
+          <td>{object.description}</td>
+          <td>{object.date}</td>
+        </tbody>
+      </table>
     </div>
   );
 };

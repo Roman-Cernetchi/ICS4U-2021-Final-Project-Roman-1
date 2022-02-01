@@ -8,24 +8,25 @@
 
 body {
   font-family: 'Poppins', helvetica;
+  font-size: 18px;
 }
 
 .Container {
-  max-width: 500px;
+  max-width: 90vw;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid rgb(119, 36, 187);
+  border: 1px solid rgb(255, 0, 0);
   padding: 30px;
   border-radius: 5px;
 }
 
 .Container2 {
-  max-width: 500px;
+  max-width: 700px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid rgb(36, 51, 187);
+  border: 1px solid rgb(101, 22, 204);
   padding: 30px;
   border-radius: 5px;
 }
@@ -34,7 +35,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -107,12 +109,34 @@ body {
   flex: 1;
 }
 
+table {
+  border-collapse: collapse;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color: rgb(211, 93, 46);
+}
+
+td {
+  background-color: rgb(218, 136, 29);
+}
 .form-control-check input {
   flex: 2;
   height: 20px;
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 60px;
   text-align: center;
 }

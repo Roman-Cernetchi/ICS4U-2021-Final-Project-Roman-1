@@ -1,3 +1,5 @@
+[![GitHub's Super Linter](https://github.com/Roman-Cernetchi/ICS4U-2021-Final-Project-Roman-1/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Roman-Cernetchi/ICS4U-2021-Final-Project-Roman-1/actions)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
